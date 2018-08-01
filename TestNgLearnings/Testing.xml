@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+
+  <test name="Testsuite 1">
+  <groups>
+  <run>
+  <include name="T1"></include>
+  <include name="T2"></include>
+  <include name="T3"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="testcases.Testcase1Test"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Testsuite 2">
+  <groups>
+  <run>
+  <include name="T2"></include>
+  <include name="T3"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="testcases.Testcase1Test"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Testsuite 3">
+  <groups>
+  <run>
+  <include name="T1"></include>
+  <include name="T3"></include>
+  <include name="T4"></include>
+  <include name="T5"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="testcases.Testcase1Test"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- TestSuite -->
